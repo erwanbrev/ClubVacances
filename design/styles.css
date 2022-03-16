@@ -11,7 +11,7 @@
     --black: #000011;
     --yellow: #D2B358;
 }
-        
+
 a {
     color: var(--yellow);
     text-decoration: none;
@@ -59,7 +59,11 @@ nav img {
 }
 
 nav button {
+    color: var(--yellow);
     background-color: var(--grey);
+    height: 20px;
+    border: none;
+    font-size: 110%;
 }
 
 
