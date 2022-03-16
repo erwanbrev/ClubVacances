@@ -5,10 +5,9 @@
 }
 
 .indeximge{
-    height: 17vh;
+    height: 24vh;
     width: 100vw;
     background-color: var(--black);
-    background-size: cover;
 }
 
 .menuprofil{

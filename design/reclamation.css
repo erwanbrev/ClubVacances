@@ -4,29 +4,27 @@
     --yellow: #D2B358;
 }
 
-.reclamationsPerso{
+.reclamationsPerso {
     font-weight: bold;
 }
 
-.formulaireInformation{
+.formulaireInformation {
     width: 50vw;
     height: auto;
     background-color: var(--grey);
-    display: flex;
-    margin-left: 40vw;
+    margin-left: 44vw;
     border-radius: 15px;
     border: var(--yellow) 1px solid;
     font-family: 'Cinzel', serif;
     color: var(--yellow);
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(30px, 70px);
     padding-top: 20px;
     margin-bottom: -70vh;
 }
 
-.css-input{
+.css-input {
     padding: 5px;
     font-size: 18px;
     border-width: 1px;
@@ -35,48 +33,36 @@
     color: #000000;
     border-style: solid;
     border-radius: 5px;
-    box-shadow: 0px 0px 0px rgba(66,66,66,.75);
+    box-shadow: 0px 0px 0px rgba(66, 66, 66, .75);
     height: 25px;
 }
 
-.info{
+.info {
     grid-column: 2/9;
     grid-row: 1;
 }
 
-.nom{
-    grid-column: 2/4;
-    grid-row: 2;
-}
-
-.prenom{
-    grid-column: 8/9;
-    grid-row: 2;
-}
-
-.mailPerso{
+.mailPerso {
     grid-column: 2/9;
     grid-row: 3;
 }
 
-.reclam{
+.reclam {
     grid-column: 2/9;
     grid-row: 4;
 }
 
-#messageReclam{
+#messageReclam {
     width: 100%;
     height: 200px;
 }
 
-.valider{
-    grid-column: 7;
+.valider {
+    grid-column: 5 / 6;
     grid-row: 7;
 }
 
-.valider{
-    border: none;
-    font-size: 18px;
+.valider {
     color: var(--yellow);
     border: solid 1px var(--yellow);
     border-radius: 5px;
@@ -87,9 +73,10 @@
     font-family: 'Cinzel', serif;
     font-size: 16px;
     margin-left: 10px;
+    margin-bottom: 20%
 }
 
-.valider:hover{
+.valider:hover {
     background-color: var(--yellow);
-    color:var(--black)
+    color: var(--black)
 }

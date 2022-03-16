@@ -11,7 +11,7 @@
     --black: #000011;
     --yellow: #D2B358;
 }
-
+        
 a {
     color: var(--yellow);
     text-decoration: none;
@@ -62,6 +62,7 @@ nav button {
     background-color: var(--grey);
 }
 
+
 .cont-button {
     width: 250px;
     display: flex;
@@ -99,7 +100,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 600px;
+    margin-top: 50%;
     height: 14vh;
     width: 100vw;
     background-color: var(--grey);
