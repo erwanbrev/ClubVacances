@@ -25,10 +25,11 @@
                 <button class="parrainage">Parrainage</button>
                 <button class="navOption">Profil</button>
             </div>
-            
+
         </nav>
     </header>
     <main>
+        <div class="indeximge"></div>
 
         <div class="produitimg">
             <img class="imggrande" src="../img/location/11.png" alt="">
@@ -37,30 +38,28 @@
             <img class="imgthumbtrois" src="../img/location/11.png" alt="">
         </div>
 
-        <div class="produittext">
+        <div id="produittext">
             <h2 class="nomDuLieu">Les landes</h2>
-            <div class="titrePrix">Prix</div>
-            <div class="prix">5000€</div>
-            <div class="titreSecteur">Localisation</div>
-            <div class="secteur">Bazas</div>
-            <div class="titreDescription">Description</div>
-            <div class="description">Notre chef local excelle dans la préparation du boeuf de Bazas</div>
-            <div class="titreMD">Superficie</div>
-            <div class="carre">300m²</div>
-            <div class="titreChambre">Chambre</div>
-            <div class="chambre">10</div>
-            <div class="titreSdB">Salle de bain</div>
-            <div class="salleDeBain">5</div>
-            <div class="chef"><input type="checkbox" name="chef" id="chef">Chef</div>
-            <div class="visite"><input type="checkbox" name="visite" id="chef">Visite</div>
-            <div class="titreEquipe">Ce lieu dispose de :</div>
-            <div class="equipements">Centre équestre, Golf, Jacuzzi, Jardin, Parc de jeux, Piscine</div>
-            <div class="secteurCategorie">Environnement</div>
-            <div class="categorie">Campagne</div>
-            <div class="secteurType">Type de maison</div>
-            <div class="type">Manoir</div>
-            <div class="titreMessage">Message :</div>
+            <span class="titreSecteur">Localisation</span><span class="secteur">Bazas</span>
+            <span class="titreDescription">Description</span><span class="description">Notre chef local excelle dans la
+                préparation du boeuf de Bazas</span>
+            <span class="titreMD">Superficie</span><span class="carre">300m²</span>
+            <span class="titreChambre">Chambre</span><span class="chambre">10</span>
+            <span class="titreSdB">Salle de bain</span><span class="salleDeBain">5</span>
+            <span class="titreEquipe">Ce lieu dispose de :</span><span class="equipements">Centre équestre, Golf,
+                Jacuzzi, Jardin, Parc de jeux, Piscine,Centre équestre, Golf, Jacuzzi, Jardin, Parc de jeux,
+                Piscine,Centre</span>
+            <span class="secteurCategorie">Environnement</span><span class="categorie">Campagne</span>
+            <span class="secteurType">Type de maison</span><span class="type">Manoir</span>
+            <span class="titreMessage">Message :</span>
             <textarea name="texteReserve" id="textReserve"></textarea>
+            <span class="titrePrix">Prix</span><span class="prix">5000€</span>
+            <span class="chef"><input type="checkbox" name="chef" id="chef">Chef</span>
+            <span class="visite"><input type="checkbox" name="visite" id="chef">Visite</span>
+            <span class="depart">Départ</span>
+            <span class="arrive">Arrivée</span>
+            <input type="date" class="css-input departInput" />
+            <input type="date" class="css-input arriveInput" />
             <button type="submit" class="valider">Réserver</button>
         </div>
     </main>

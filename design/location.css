@@ -4,9 +4,15 @@
     --yellow: #D2B358;
 }
 
+.indeximge {
+    height: 17vh;
+    width: 100vw;
+    background-color: var(--black);
+    background-size: cover;
+}
 
 .produitimg,
-.produittext {
+#produittext {
     width: 40%;
     height: 70vh;
     background-color: var(--grey);
@@ -36,12 +42,16 @@
     border-radius: 10px;
 }
 
-.produittext {
+#produittext {
     float: right;
     margin-right: 7%;
     grid-auto-rows: minmax(30px, 100px);
     height: 700px;
     margin-bottom: 50px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .imggrande {
@@ -94,7 +104,9 @@
 .titreChambre,
 .titreSdB,
 .titreMessage,
-.titrePrix {
+.titrePrix,
+.arrive,
+.depart {
     font-size: 19px;
     font-weight: bold;
     color: var(--yellow);
@@ -199,38 +211,63 @@
     grid-column: 9/10;
     grid-row: 12;
     color: var(--yellow);
-    margin-left: -30px;
+    margin-left: -100px;
 }
 
 .prix {
     grid-column: 9/10;
     font-size: 30px;
     grid-row: 13;
-    margin-left: -30px;
+    margin-left: -100px;
 }
 
 .chef {
     margin-top: 13px;
     grid-column: 2/4;
-    grid-row: 16;
+    grid-row: 18;
 }
 
 .visite {
     margin-top: 13px;
     grid-column: 1/2;
-    grid-row: 16;
-}
-
-.titreMessage {
-    grid-column: 1;
-    grid-row: 14;
-    margin-top: 15px;
+    grid-row: 18;
 }
 
 #textReserve {
     grid-column: 1/9;
     grid-row: 15;
+    height: 10vh;
+    margin-top: 1vh;
+
 }
+
+.titreMessage {
+    grid-column: 1;
+    grid-row: 14;
+}
+
+.departInput {
+    grid-column: 3;
+    grid-row: 20;
+    width: 10vw;
+}
+
+.arrive {
+    grid-column: 1;
+    grid-row: 22;
+}
+
+.depart {
+    grid-column: 1;
+    grid-row: 20;
+}
+
+.arriveInput {
+    grid-column: 3;
+    grid-row: 22;
+    width: 10vw;
+}
+
 
 .valider {
     border: none;
@@ -246,7 +283,7 @@
     font-size: 20px;
     margin-left: 10px;
     grid-column: 8;
-    grid-row: 17;
+    grid-row: 20;
     margin-left: 20px;
     margin-top: -25px;
 }
@@ -256,87 +293,111 @@
     color: var(--black)
 }
 
-/* !RESPONSIVE MACBOOK AIR */
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 720px) {
+
+    .produitimg,
+    #produittext {
+        width: 90%;
+        display: flex;
+        height: auto;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
     .produitimg {
-        float: left;
-        margin-left: 3%;
-        margin-top: 9%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        grid-template-rows: repeat(2, 1fr);
-        position: fixed;
-        height: 470px;
-        padding: 0;
+        position: absolute
     }
 
     .imggrande {
-        grid-row: 1;
-        grid-column: 1 / 4;
-        margin-left: 0px;
-        width: 450px;
-        margin: 3% auto;
-        margin-top: 4.5%;
+        margin-left: 0;
+        width: 100%;
+        height: 67%;
+    }
+
+    .imgthumbun,
+    .imgthumbdeux,
+    .imgthumbtrois {
+        width: 30%;
+        height: 20%;
+        margin-top: 69%;
+        display: flex;
     }
 
     .imgthumbun {
-        grid-column: 1;
-        grid-row: 2;
-        margin-left: 0px;
-        margin: 2% auto;
+        margin-left: -104%;
     }
 
     .imgthumbdeux {
-        grid-column: 2;
-        grid-row: 2;
-        margin-left: 0px;
-        margin: 2% auto;
-
+        margin-left: 2%;
     }
 
     .imgthumbtrois {
-        grid-column: 3;
-        grid-row: 2;
-        margin: 2% auto;
+        margin-left: 2%;
     }
 
-    .produittext {
-        margin-right: 3%;
-        margin-top: 9%;
-        width: 700px;
-    }
-}
-
-/* !RESPONSIVE MOBILE (400x786) */
-@media screen and (max-width: 600px) {
-    header {
-        height: 7vh;
-        width: 100vw;
+    #produittext {
+        position: absolute;
+        margin-top: 80%;
+        flex-direction: column;
+        margin-left: 7vw;
     }
 
-    nav {
-        justify-content: start;
-    }
-
-    nav img {
-        margin-top: 10%;
-        margin-left: 50%;
-        width: 48px;
-        height: 48px;
-    }
-
-    .cont-button {
-        margin-left: 12%;
-        width: 60%;
+    #produittext span {
+        height: 30px;
         display: flex;
-        align-items: center;
-        margin-right: 0%;
-        font-size: 80%;
     }
 
-    .connexion,
-    .parrainage {
-        font-size: 100%;
+    .nomDuLieu {
+        text-align: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .titreSecteur,
+    .titreDescription,
+    .titreEquipe,
+    .secteurCategorie,
+    .secteurType,
+    .titreMD,
+    .titreChambre,
+    .titreSdB,
+    .titreMessage,
+    .titrePrix {
+        font-size: 19px;
+        font-weight: bold;
+        color: var(--yellow);
+    }
+
+    .titreSdB,
+    .salleDeBain,
+    .secteurType,
+    .type {
+        margin-left: 0;
+    }
+
+    .prix,
+    .titrePrix {
+        margin-left: 70%;
+        font-size: 30px;
+    }
+
+    .valider {
+        margin-top: 0;
+        width: 70vw;
+    }
+
+    .prix,
+    .titrePrix {
+        display: absolute;
+        margin-top: 30px;
+        width: 10%;
+    }
+
+    .chef,
+    .visite {
+        display: flex;
+        width: 10%;
     }
 }
