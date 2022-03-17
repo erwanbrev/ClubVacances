@@ -93,7 +93,6 @@
 }
 
 .vactexte {
-    /* text-align: center; */
     margin-left: 34%;
     color: var(--yellow);
     font-size: 200%;
@@ -111,7 +110,6 @@
     background-color: var(--grey);
     font-family: 'Cinzel', serif;
     font-size: 200%;
-    margin-left: 10px;
     transform: translateX(-50%);
     margin-left: 50%;
 }
