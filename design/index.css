@@ -92,19 +92,34 @@
     margin-left: 55px;
 }
 
+.vactexte {
+    /* text-align: center; */
+    margin-left: 34%;
+    color: var(--yellow);
+    font-size: 200%;
+    font-family: 'Cinzel', serif;
+}
+
 .rechercher {
-    border: none;
-    font-size: 18px;
+    margin-top: 1%;
     color: var(--yellow);
     border: solid 1px var(--yellow);
     border-radius: 5px;
-    width: 130px;
-    height: 22px;
+    width: 20%;
+    height: 300%;
     text-align: center;
     background-color: var(--grey);
     font-family: 'Cinzel', serif;
-    font-size: 16px;
+    font-size: 200%;
     margin-left: 10px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.recherche input::placeholder {
+    visibility: hidden;
+    font-family: 'Cinzel', serif;
+    color: var(--yellow);
 }
 
 .rechercher:hover {
