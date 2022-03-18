@@ -259,4 +259,9 @@ h2 {
         font-size: 100%;
         width: 40%;
     }
+
+    .vactexte{
+        width: 90vw;
+        margin-left: 5vw;
+    }
 }
