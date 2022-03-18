@@ -212,32 +212,114 @@ input {
     display: none;
 }
 
+/* ! STYLE DE LA PAGE RECHERCHER */
+.cont-rech {
+    display: flex;
+    flex-direction: row;
+    margin: 10% auto;
+    width: 80%;
+    font-size: 130%;
+    padding: 3%;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    background-color: var(--grey);
+    border-radius: 10px;
+}
+
+.nom-rech,
+.div-rech-prix {
+    color: var(--yellow);
+}
+
+.div-rech-img {
+    width: auto;
+    background-size: cover;
+    margin-right: 6%;
+}
+
+.div-rech-img img {
+    border-radius: 5px;
+}
+
+
+.div-rech-txt {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+
+.div-rech-txt h5 {
+    margin-top: 6%;
+}
+
+.div-rech-prix {
+    display: flex;
+    align-items: center;
+}
+
+.recherche {
+    width: 1200px;
+    height: 100px;
+    background-color: var(--grey);
+    border-radius: 5px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 3%;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 2.2%;
+}
+
+.recherche span {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    color: var(--yellow)
+}
+
+.css-input {
+    padding: 5px;
+    font-size: 18px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #f6f6f6;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(66, 66, 66, .75);
+    height: 25px;
+}
+
+/* ! */
+
 @media screen and (max-width: 720px) {
-    body{
+    body {
         overflow-x: hidden;
     }
 
-    .form-co{
+    .form-co {
         width: 90vw;
         margin-left: 5vw;
         height: auto;
         margin-top: 13vh;
         margin-bottom: 13vh;
     }
-    .autre{
+
+    .autre {
         width: 80vw;
         display: flex;
     }
-    .autre label, .autre input{
+
+    .autre label,
+    .autre input {
         width: 70vw;
     }
 
-    .cont-right{
+    .cont-right {
         visibility: collapse;
         height: 0;
     }
 
-    .container{
+    .container {
         display: flex;
         margin-left: 0;
         margin-right: -30wv;
@@ -245,11 +327,11 @@ input {
         justify-content: center;
     }
 
-    .cont-left{
+    .cont-left {
         width: 100vw;
     }
 
-    .annonce{
+    .annonce {
         height: auto;
         margin-bottom: 10vh;
         width: 90vw;
@@ -364,7 +446,7 @@ a:hover {
     color: rgb(255, 72, 72);
 }
 
-.team{
+.team {
     display: flex;
     flex-direction: column;
     font-size: 80%;
