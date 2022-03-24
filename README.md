@@ -1,5 +1,5 @@
 # Vacances chez Gustave.
-# Le site uniquement Front-end est trouvable [ici](https://erwanbrev.github.io/ClubVacances/)
+# Le site uniquement Front-end est trouvable [ici](https://erwanbrev.github.io/ClubVacances/), mais attention, il n'est pas encore entièrement responsive !
 # Le repertoire final, avec la fusion Front et Back-end [ici](https://github.com/Kero3333/ClubVacances)!
 
 ## Site de location d’appartement ou maison à la mer et à la montagne créee par :
